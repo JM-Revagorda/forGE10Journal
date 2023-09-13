@@ -10,16 +10,35 @@
 			width: 98%;
 			border: 2px black solid;
 		}
-		#one{
-			height: 65px;
-		}
-		#two{
-			height: 450px;
-		}
-		#footer{
-			height: 65px;
+			#one{
+				height: 65px;
+				position: sticky;
+				top: 2px;
+			}
+			#two{
+				height: 450px;
+			}
+			#footer{
+				height: 65px;
+				position: absolute;
+				top: 1450px;
+				left: 15px;
+			}
+		#imagemain{
+			width: 500px;
+			height: 500px;
+			border: 1px blue dashed;
 			position: relative;
-			top: 480px;
+			top: 90px;
+			left: -350px;
+		}
+		#textmain{
+			width: 50%;
+			height: 500px;
+			border: 1px purple dashed;
+			position: relative;
+			top: -412px;
+			right: -20%;
 		}
 		</style>
 	</head>
@@ -28,6 +47,7 @@
 	</div>
 	<div class="box" id="two">
 	</div>
+	<div id="imagemain"></div><div id="textmain"></div>
 	<div class="box" id="footer">
 	</div>
 </body>
