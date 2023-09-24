@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
 		<title>Journal</title>
 		<style>
@@ -40,10 +40,44 @@
 			top: -412px;
 			right: -20%;
 		}
+		#menu1, #menu2, #menu3{
+			width: 200px;
+			height: 100%;
+			border: 1px solid black;
+		}
+			#menu1{
+				position: relative;
+				left: 12%;
+				text-align: center;
+				background-color: crimson;
+			}
+			#menu2{
+				position: relative;
+				left: 27.3%;
+				top: -67px;
+				text-align: center;
+				transition: background-color 0.3s;
+			}
+				#menu2:hover{
+					background-color: rgb(27, 206, 11);
+				}
+			#menu3{
+				position: relative;
+				left: 42.4%;
+				top: -134px;
+				text-align: center;
+				transition: background-color 0.3s;
+			}
+				#menu3:hover{
+					background-color: rgb(19, 138, 218);
+				}
 		</style>
 	</head>
 <body>
 	<div class="box" id="one">
+		<div id="menu1"><span style="position: relative; top: 30%;">Home</span></div>
+		<div id="menu2"><span style="position: relative; top: 30%;">Journals</span></div>
+		<div id="menu3"><span style="position: relative; top: 30%;">About</span></div>
 	</div>
 	<div class="box" id="two">
 	</div>
