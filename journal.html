@@ -2,8 +2,79 @@
 <html lang="en-US">
     <head>
         <title>Journal</title>
+        <style>
+            body{
+                display: grid;
+                grid-template-columns: fit-content(30%) auto auto;
+            }
+            .side_grid_element, .main_grid_element{
+                border: 1px solid black;
+                padding: 20px;
+            }
+            .main_grid_element{
+                grid-column: 2 / 4;
+                display: grid;
+                row-gap: 10px;
+                grid-template-areas: 'entry1'
+                                     'entry2'
+                                     'entry3'
+                                     'entry4';
+            }
+                .journal_temp{
+                    border: 1px solid blue;
+                }
+                    #entry1{ grid-area: entry1; display: grid; grid-template-columns: auto fit-content(9ch);}
+                    #entry2{ grid-area: entry2; display: grid; grid-template-columns: auto fit-content(9ch);}
+                    #entry3{ grid-area: entry3; display: grid; grid-template-columns: auto fit-content(9ch);}
+                    #entry4{ grid-area: entry4; display: grid; grid-template-columns: auto fit-content(9ch);}
+                        .entryimage{
+                            border: 1px solid blue;
+                            margin: 0px 5px 0px 0px;
+                            padding: 100px 5px;
+                        }
+                        .entrytext{
+                            grid-column: 2 / span 2;
+                        }
+        </style>
     </head>
 <body>
+    <div class="side_grid_element"><h1>CHURCH</h1></div>
+    <div class="main_grid_element">
+        <div class="journal_temp" id="entry1">
+            <div class="entryimage"></div>
+            <div class="entrytext">
+                Lorem Ipsum deo asldfjasdifnasdifnajsldialsdfjasodi<br/>
+                afhansldknfuasdhfaiusdfakbdfuahsdukfhbaiusdhfiuaadf<br/>
+            </div>
+        </div>
+        <div class="journal_temp" id="entry2">
+            <div class="entryimage"></div>
+            <div class="entrytext">
+                Lorem Ipsum deo asldfjasdifnasdifnajsldialsdfjasodi<br/>
+                afhansldknfuasdhfaiusdfakbdfuahsdukfhbaiusdhfiuaadf<br/>
+            </div>
+        </div>
+        <div class="journal_temp" id="entry3">
+            <div class="entryimage"></div>
+            <div class="entrytext">
+                Lorem Ipsum deo asldfjasdifnasdifnajsldialsdfjasodi<br/>
+                afhansldknfuasdhfaiusdfakbdfuahsdukfhbaiusdhfiuaadf<br/>
+            </div>
+        </div>
+        <div class="journal_temp" id="entry4">
+            <div class="entryimage"></div>
+            <div class="entrytext">
+                Lorem Ipsum deo asldfjasdifnasdifnajsldialsdfjasodi<br/>
+                afhansldknfuasdhfaiusdfakbdfuahsdukfhbaiusdhfiuaadf<br/>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.color = "red";
+        }
+    </script>
 
 </body>
 </html>
