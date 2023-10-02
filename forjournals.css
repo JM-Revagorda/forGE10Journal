@@ -3,8 +3,7 @@ body {
     grid-template-columns: fit-content(30%) auto auto;
 }
 
-.side_grid_element,
-.main_grid_element {
+.side_grid_element, .main_grid_element {
     border: 1px solid black;
     padding: 20px;
     text-wrap: wrap;
@@ -20,10 +19,10 @@ body {
         'entry4';
 }
 
-.journal_temp, .hid_journal_temp {
+.journal_temp{
     display: grid;
     border: 1px solid blue;
-    grid-template-columns: fit-content(3ch) fit-content(7ch);
+    grid-template-columns: fit-content(3ch) fit-content(6ch);
 }
     .journal_temp:hover{
         cursor: pointer;
@@ -72,10 +71,19 @@ body {
     margin: auto;
     width: 70%;
     position: fixed;
-    top: 30%;
+    animation-name: journals;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    /* top: 30%;*/
     left: 15%;
     overflow-y: auto;
     overflow-x: none;
     text-wrap: wrap;
     background-color: white;
 }
+    @keyframes journals {
+        from{top: 0%; opacity: 0;}
+        to {top: 25%; opacity: 1;}
+    }
+
+
