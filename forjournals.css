@@ -1,6 +1,9 @@
-body {
+body{ overflow-x: hidden;}
+
+#container {
+    margin: 0px;
     display: grid;
-    grid-template-columns: fit-content(30%) auto auto;
+    grid-template-columns: fit-content(20%) fit-content(1vh);
 }
 
 .side_grid_element, .main_grid_element {
@@ -10,7 +13,6 @@ body {
 }
 
 .main_grid_element {
-    grid-column: 2 / 4;
     display: grid;
     row-gap: 10px;
     grid-template-areas: 'entry1'
@@ -19,7 +21,7 @@ body {
         'entry4';
 }
 
-.journal_temp{
+.journal_temp, .hid_journal_temp{
     display: grid;
     border: 1px solid blue;
     grid-template-columns: fit-content(3ch) fit-content(6ch);
@@ -31,13 +33,13 @@ body {
 .entryimage {
     border: 1px solid blue;
     margin: 0px 5px 0px 0px;
-    padding: 100px 5px;
+    /* padding: 100px 5px; */
 }
 
 .entrytext {
     grid-column: 2 / span 2;
 }
-    pre{
+    pre, p{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
     }
@@ -76,14 +78,14 @@ body {
     animation-fill-mode: forwards;
     /* top: 30%;*/
     left: 15%;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: none;
     text-wrap: wrap;
     background-color: white;
 }
     @keyframes journals {
-        from{top: 0%; opacity: 0;}
-        to {top: 25%; opacity: 1;}
+        from{top: -5%; opacity: 0;}
+        to {top: 10%; opacity: 1;}
     }
 
 
