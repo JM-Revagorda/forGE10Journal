@@ -72,6 +72,7 @@ body{ overflow-x: hidden;}
 .hid_journal_temp {
     margin: auto;
     width: 70%;
+    height: 50%;
     position: fixed;
     animation-name: journals;
     animation-duration: .5s;
@@ -85,7 +86,7 @@ body{ overflow-x: hidden;}
 }
     @keyframes journals {
         from{top: -5%; opacity: 0;}
-        to {top: 10%; opacity: 1;}
+        to {top: 20%; opacity: 1;}
     }
 
 
