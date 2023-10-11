@@ -1,9 +1,53 @@
-body{ overflow-x: hidden;}
+body{overflow-x: hidden;}
+
+/* .header{
+    border: 1px solid black;
+    text-align: center;
+    position: sticky;
+}
+    .menu{
+        position: relative;
+        top: -10%;
+    }
+    .menu div{
+        float: right;
+        right: 0;
+        width: 5%;
+        border: 1px blue dotted;
+        padding: 1% 5%;
+    } */
+    .header{
+        display: grid;
+        border: 1px solid black;
+        grid-template-columns: 60% 40%;
+    }
+        .header h1{
+            text-align: right;
+            /* border: 1px solid black; */
+            position: relative;
+            left: 50%;
+            width: 10%;
+        }
+    .menu div{
+        display: inline-block;
+        padding: 6% 12%;
+        float: right;
+        border: 1px solid blue;
+    }
+    .menu a{
+        text-decoration: none;
+        color: black;
+    }
+        #menuhome, #menujournals, #about{transition: background-color 0.3s;}
+            #menuhome:hover{background-color: rgb(220, 20, 60);}
+            #menujournals:hover{background-color: rgb(27, 206, 11);}
+            #about:hover{background-color: rgb(19, 138, 218);}
 
 #container {
     margin: 0px;
     display: grid;
-    grid-template-columns: fit-content(20%) fit-content(1vh);
+    grid-template-columns: fit-content(20%) fit-content(2vh);
+    width: 100%;
 }
 
 .side_grid_element, .main_grid_element {
