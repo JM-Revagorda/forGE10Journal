@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Journal</title>
 		<style>
 		*{
 			margin: auto;
+			font-family: Arial, Helvetica, sans-serif;
 		}
 		.box{
 			width: 98%;
@@ -17,7 +19,12 @@
 			}
 			#two{
 				height: 450px;
+				text-align: center;
 			}
+				hr{
+					border: 2px solid blue;
+					width: 70%;
+				}
 			#footer{
 				height: 65px;
 				position: absolute;
@@ -58,9 +65,27 @@
 				text-align: center;
 				transition: background-color 0.3s;
 			}
-				#menu2:hover{
-					background-color: rgb(27, 206, 11);
+				.dropdown-content{
+					display: none;
+					position: absolute;
+					top: 90%;
+					background-color: white;
+					min-width: 100%;
+					border: 1px solid black;
+					z-index: 1;
 				}
+				#menu2:hover .dropdown-content{
+					display: block;
+				}
+				#menu2:hover{background-color: rgb(27, 206, 11);}
+					.dropdown-content a{
+						color: black;
+						text-decoration: none;
+						display: block;
+						padding: 12px 16px;
+						transition: 0.3s;
+					}
+					a:hover{background-color: lightgray;}
 			#menu3{
 				position: relative;
 				left: 42.4%;
@@ -76,13 +101,33 @@
 <body>
 	<div class="box" id="one">
 		<div id="menu1"><span style="position: relative; top: 30%;">Home</span></div>
-		<div id="menu2"><span style="position: relative; top: 30%;">Journals</span></div>
+		<div id="menu2">
+			<span style="position: relative; top: 30%;">Journals</span>
+			<div class="dropdown-content">
+				<a href="journalCourt.html">Court</a>
+				<a href="journalChurch.html">Church</a>
+				<a href="#">Classroom</a>
+				<a href="#">Culture</a>
+				<a href="#">Community</a>
+			</div>
+		</div>
 		<div id="menu3"><span style="position: relative; top: 30%;">About</span></div>
 	</div>
 	<div class="box" id="two">
+		<br/>
+		<br/>
+		<br/>
+		<p style="font-size: smaller;">John Michael Revagorda presents...</p>
+		<br/>
+		<hr/>
+		<h1 style="font-size: 70px;">JOURNALS!</h1>
+		<hr/>
 	</div>
-	<div id="imagemain"></div><div id="textmain"></div>
+	<br/>
+	<br/>
+	<h1 style="text-align: center; font-size: 100px;">New Entries!</h1>
+		<div id="imagemain"></div><div id="textmain"></div>
+	</div>
 	<div class="box" id="footer">
-	</div>
 </body>
 </html>
