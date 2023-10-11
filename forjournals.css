@@ -29,7 +29,6 @@ body{overflow-x: hidden;}
             width: 10%;
         }
     .menu div{
-        display: inline-block;
         padding: 6% 12%;
         float: right;
         border: 1px solid blue;
