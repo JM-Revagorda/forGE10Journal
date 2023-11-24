@@ -8,11 +8,20 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" style="background-color: purple;">
         <h1 style="width: 50%;">Journal Entry</h1>
         <div class="menu">
             <a href="#"><div id="about">About</div></a>
-            <a href="#"><div id="menujournals">Journals</div></a>
+                <div id="menujournals">
+                    Journals
+                    <div class="dropdown-content" style="padding: 0;">
+                        <a href="journalCourt.html">Court</a>
+                        <a href="journalChurch.html" style="background-color: gray;">Church</a>
+                        <a href="#">Classroom</a>
+                        <a href="#">Culture</a>
+                        <a href="#">Community</a>
+                    </div>
+                </div>
             <a href="index.html"><div id="menuhome">Home</div></a>
         </div>
     </div>
@@ -24,6 +33,8 @@
             alsdjfalsdfnaksdfAJSDFJACISDF<br/>
         </p>
     </div>
+
+    <!-- Loaded area of journals -->
     <div class="main_grid_element">
         <div class="journal_temp" id="entry1">
             <div class="entryimage"></div>
@@ -58,6 +69,7 @@
         </div>
     </div>
 
+    <!-- Main content for journals -->
     <div class="modal">
         <div class="hid_journal_temp" id="fullentry1">
             <div class="entryimage"></div>

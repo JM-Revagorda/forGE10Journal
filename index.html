@@ -8,55 +8,102 @@
 			margin: auto;
 			font-family: Arial, Helvetica, sans-serif;
 		}
+		body{
+			display: grid;
+			/* grid-template-rows: "two" auto auto; */
+			/* overflow-x: hidden; */
+		}
 		.box{
-			width: 98%;
-			border: 2px black solid;
+			/* width: 98%; */
+			/* border: 2px black solid; */
 			background-color: white;
 		}
 			#one{
-				height: 65px;
-				position: sticky;
-				top: 2px;
+				/* display: grid;
+				grid-template-columns: 50% auto auto auto; */
+				height: 10vh;
+				width: 100vw;
+				position: fixed;
+				/* padding: 3% 2%; */
+				top: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 0);
+				transition: 0.3s;
+				z-index: 3;
 			}
-			#two{
-				height: 450px;
-				text-align: center;
-				padding: 5% 0;
-			}
-				hr{
-					border: 2px solid blue;
-					width: 70%;
+			#menu3{
+					color: black;
+					display: inline-block;
+					padding: 50% 100%;
+					/* text-decoration: none; */
+					transition: 0.3s;
 				}
-			#footer{
-				height: 65px;
+			/* .menu{
 				position: absolute;
-				top: 1450px;
-				left: 15px;
+				top: 0;
+				right: 0;
+			} */
+				#one a{color: black;}
+
+			html:not([data-scroll='0']) #one{
+				background-color: rgb(0, 0, 0, 1);
+				color: white;
 			}
-		#menu1, #menu2, #menu3{
-			width: 200px;
-			height: 100%;
-			border: 1px solid black;
-		}
-			#menu1{
-				position: relative;
-				left: 12%;
-				text-align: center;
-				background-color: crimson;
+			html:not([data-scroll='0']) #one #menu3{
+				color: white;
 			}
-			#menu2{
-				position: relative;
-				left: 27.3%;
-				top: -67px;
-				text-align: center;
-				/* transition: background-color 0.3s; */
+				#titler{
+					display: inline-block;
+					padding-top: 25%;
+					width: 1vw;
+					text-align: center;
+				}
+				/* table .menu{
+					width: 12vw;
+					height: auto;
+				} */
+				#menu1{
+					background-color: red;
+				}
+				/* #menu2{
+					border: 1px solid green;
+				} */
+				#menu3:hover{
+					cursor: pointer;
+					background-color: blue;
+				}
+				#one .dropdown-content a{
+						color: black;
+						text-decoration: none;
+						display: block;
+						text-align: center;
+						padding: 12px 14px;
+						transition: 0.3s;
+					}
+			#two{
+				grid-row: 1;
+				width: 90%;
+				text-align: left;
+				padding: 18% 2%;
+				line-height: 1.6;
+				z-index: 1;
 			}
+				#two hr{
+					margin: 0;
+					border: 2px solid blue;
+					width: 30%;
+				}
+				#menu1, #menu2{
+					display: inline-block;
+					padding: 15% 35%;
+				}
 				.dropdown-content{
 					display: none;
 					position: absolute;
 					top: 90%;
+					right: 22.5%;
 					background-color: white;
-					min-width: 100%;
+					max-width: 50%;
 					border: 1px solid black;
 					z-index: 1;
 				}
@@ -68,42 +115,27 @@
 						0%{ opacity: 0; }
 						100%{ opacity: 1; }
 					}
-				/*#menu2:hover{background-color: rgb(27, 206, 11);} */
-					.dropdown-content a{
-						color: black;
-						text-decoration: none;
-						display: block;
-						padding: 12px 16px;
-						transition: 0.3s;
-					}
-					a:hover{background-color: lightgray;}
-			#menu3{
-				position: relative;
-				left: 42.4%;
-				top: -134px;
-				text-align: center;
-				/* transition: background-color 0.3s; */
-			}
-				/* #menu3:hover{
-					background-color: rgb(19, 138, 218);
-				} */
+					
+					.dropdown-content a:hover{background-color: lightgray;}
+
 			.container1{
-				display: grid;
 				border: 1px solid gray;
-				grid-template-columns: auto auto auto;
+				display: grid;
+				grid-template-rows: auto auto auto;
 				padding: 2% 5%;
 			}
-				#imagemain{
-					grid-column: auto;
-					border: 1px blue dashed;
-					padding: 10%;
+				.entry{
+					width: 90%;
 				}
-				#textmain{
-					grid-column: 2 / span 2;
-					border: 1px purple dashed;
-					padding: 2%;
-					width: 80ch;
-				}
+					.entry table{
+						width: 100%;
+						background-color: rgb(255, 255, 255, 0.4);
+						border-radius: 10px;
+						/* border: 1px solid white; */
+					}
+					.textarea{
+						width: 80ch;
+					}
 				.buttons{
 					width: 20px;
 					height: 20px;
@@ -118,58 +150,253 @@
 						width: 25px;
 						height: 25px;
 					}
+					.content{
+						grid-row: 2;
+						width: 98%;
+						/* height: 200%; */
+						background-color: #2d0236;
+						/* background-image: url('images/Homepage/Homepage\ background.jpg');
+						background-position: 0 20%;
+						background-size: 100%; */
+						color: white;
+						z-index: 1;
+					}
+						.arrow{
+							display: block;
+							font-size: 50px;
+							color: white;
+							position: absolute;
+							top: 140%;
+							margin: 3%;
+							padding: 2%;
+							transition: 0.5s;
+						}
+							.todleft:hover{
+								cursor: pointer;
+								text-shadow: 5px 5px cyan;
+							}
+							.todright:hover{
+								cursor: pointer;
+								text-shadow: -5px 5px cyan;
+							}
+							.todright{
+								right: -3%;
+							}
+			.about{
+				display: grid;
+				grid-row: 3;
+				grid-template-columns: auto auto;
+				grid-template-rows: auto auto auto;
+				width: 98vw;
+				border: 2px solid blue;
+				padding: 20px 0;
+			}
+				.aboutheader{
+					/* font-size: 30px; */
+					grid-column: 1;
+					grid-row: 1;
+					transform: translateZ(10px);
+					position: sticky;
+					top: 0;
+					left: 0;
+					padding-top: 30%;
+					align-self: start;
+					border: 1px solid black;
+					z-index: 3;
+				}
+				#aboutarea1{
+					grid-column: 2;
+					grid-row: 1 / span 3;
+					border-left: 2px solid gold;
+					padding-left: 5px;
+					width: 60ch;
+				}
+			#footer{
+				text-align: center;
+				z-index: 4;
+				display: block;
+				width: 40%;
+				border: 1px, solid blue;
+				grid-row: 4;
+				/* grid-column: 1; */
+				padding: 3% 0;
+			}
 			
 		</style>
 	</head>
 <body>
 	<div class="box" id="one">
-		<div id="menu1"><span style="position: relative; top: 30%;">Home</span></div>
+		<table>
+			<tr>
+				<td width="60%" style="text-align: center; font-size: 20px;">Journals</td>
+				<td width="15%"><span id="menu1">Home</span></td>
+				<td width="20%">
+					<div id="menu2">
+						Journals
+						<span class="dropdown-content">
+							<a href="journalCourt.html">Court</a>
+							<a href="journalChurch.html">Church</a>
+							<a href="#">Classroom</a>
+							<a href="#">Culture</a>
+							<a href="#">Community</a>
+						</span>
+					</div>
+				</td>
+				<td><a href="#" title="Under Construction"><span id="menu3">About</span></a></td>
+			</tr>
+		</table>
+		<!-- <span id="titler">JOURNALS</span>
+		<span id="menu1" style="margin: -2% 0 5%;">Home</span>
 		<div id="menu2">
-			<span style="position: relative; top: 30%;">Journals</span>
-			<div class="dropdown-content">
+			Journals
+			<span class="dropdown-content">
 				<a href="journalCourt.html">Court</a>
 				<a href="journalChurch.html">Church</a>
 				<a href="#">Classroom</a>
 				<a href="#">Culture</a>
 				<a href="#">Community</a>
-			</div>
+			</span>
 		</div>
-		<div id="menu3"><span style="position: relative; top: 30%;">About</span></div>
+		<a href="#" title="Under Construction"><span id="menu3">About</a></span> -->
 	</div>
 	<div class="box" id="two">
-		<br/>
-		<br/>
-		<br/>
-		<p style="font-size: smaller;">John Michael Revagorda presents...</p>
-		<br/>
 		<hr/>
 		<h1 style="font-size: 70px;">JOURNALS!</h1>
 		<hr/>
+		<br/>
+		<p style="font-size: smaller;">By John Michael Revagorda</p>
 	</div>
 	<br/>
 	<br/>
+	<div class="content">
 		<h1 style="text-align: center; font-size: 100px;">New Entries!</h1>
+		<div class="arrow todleft">&lt;</div>
+		<div class="arrow todright">&gt;</div>
 		<div class="container1">
-			<div id="imagemain"><img src="images/Homepage/placeholder2.jpg"></div>
-			<div id="textmain">
-				<p>
-					The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more 
-					difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the 
-					start. The running speed starts slowly, but gets faster each minute after you hear this signal. 
-					[beep] A single lap should be completed each time you hear this sound. [ding] Remember to run 
-					in a straight line, and run as long as possible. The second time you fail to complete a lap 
-					before the sound, your test is over. The test will begin on the word start. On your mark, get 
-					ready, start.
-				</p>
+			<div class="entry">
+				<table>
+					<tr>
+						<td><img src="images/Homepage/placeholder2.jpg"></td>
+						<td class="textarea">
+							Chaporo 1: Duke nukem fghts the...anime? <br/>
+								<br/>
+							Duki Nuki, aftr fighting d alions from duke nukem forever and ever, was 
+							guven task to investigat num of Incidents in La Vegan, Neverda. Suddenly, when dick kickem 
+							was investigating a fighting incident in a construct area near his casino, he saw an fight 
+							between 2 anime people, an anime guy and a mysterious blavk hairedman. He(A games) decided 
+							to join in too, for d US gov told him to get both 4 interrogation and also d haired guy lso 
+							saw him and thout he threat. N aslo black anime guy killed other guy. He fought him in Duke 
+							Nukem forever style but went into exit protal when foghter ccamec our to chase him down. Us 
+							gob can’t trak him as he dissapperad somewhere. during telopt, duke was fighting blck haired 
+							gy. hoever, anme guy got uppe hand and kicked duki outi from pprtal. He then dissaperad as 
+							black anime haied guy escapes.<br/>
+							<br/>
+							This is the beginning of a new paragraph. He woke up in alley wai wuth white lioght ahead 
+							of him. Dick kickem enrers place. It turns out dat he is in Osaka Japan, but very deifferen. 
+							It seems he is in anime show. He try to go sround Obama japon looking fir Mcdonalds, n 
+							realized they don’t exist! But at least wendys exist. Hold on a minute, therec not there. 
+							Damn” He said, “This aint lookn gud.” So anyways, he tries to call US  abot his loction. Wait 
+							wut? He is not in US?! or in Earth?!
+							</p>
+						</td>
+					</tr>
+				</table>
 			</div>
-			<div style="text-align: center; grid-column: 1 / span 3;">
+			<div style="text-align: center; grid-row: 3; margin: 5% 47%;">
 				<span class="buttons"></span>
 				<span class="buttons"></span>
 				<span class="buttons"></span>
 			</div>
 		</div>
 	</div>
-	<div class="box" id="footer">
+	<div class="about">
+		<h1 class="aboutheader">About this site</h1>
+		<div id="aboutarea1">
+			<p>
+				From: Margie Fish <mfish@fish.partners>
+Good morning!<br/>
+Just a quick update for you today. First off, I’ve placed your resume with two
+new agencies. They specialize in industries a little different from yours, but you 
+never know where a match might be made! I’ve also reached out to a few more 
+of my colleagues across the country, letting them know to get in touch if they 
+hear of anything. Finally, I followed up with Electromotiv again, but they keep 
+stalling. At this point I think it’s safe to say an offer won’t be coming.
+You’ve been with us for a while now and I appreciate your trust, so I want to be 
+honest: The likelihood of us finding you something that genuinely makes use of 
+your skills in the foreseeable future is rather low. This isn’t because of any lack 
+of qualifications on your part... It is simply a reflection of the realities of the time. 
+We’ll keep trying, of course! I just wanted to ensure you kept some realistic 
+expectations in mind going forward.<br/>
+<br/>
+I know you’ve said you were hoping to stay in the country, but it may be time to 
+reconsider that stance. Many of the people we represent have done stints overseas and report that it is an eye-opening, and in some cases, career-enhancing 
+move. I don’t have a lot of contacts in that particular arena, but I can point you 
+in the direction of someone I know who has some experience working with 
+Chinese electronics firms. Let me know if that sounds interesting to you and I’ll 
+get you two introduced.
+M.<br/>
+-----<br/>
+Margie Fish, President<br/>
+Fish Partners Recruiting<br/>
+“The journey of a thousand miles begins with a single step…”<br/>
+<br/>
+<br/>
+<br/>
+Greetings, Operator!
+
+When we started the 20th Century Experience, we believed we were onto something, but even we couldn’t have predicted the overwhelming response from our visitors. It turns out a taste of life in the 20th century is not enough for many of our visitors, and after returning regularly, some are planning to live their entire lives here!
+
+Naturally, this includes the old idea of what was called “full-time employment.” In a happy coincidence, the introduction of “workers” to our park brings us one step closer to being the most authentic reproduction of the 20 century! Of course, now that we have a large number of people willing to assemble our food using their own two hands, we no longer require your services to design automated food assembly machines.
+
+Best of luck in your future endeavours!
+
+Thanks,
+The Management
+<br/>
+<br/>
+<br/>
+Greetings, Operator!
+
+It’s exciting times for the 20th Century Experience! A few announcements to make regarding park operations:
+
+We are increasing *Mall* and *Skate Park* hours to 24 hours a day. All operators role-playing as Retail Associates at the Mall or as Cool Kids in the Skate Park will be assigned to one of three shifts.
+
+*Keytars* are now back in stock after last month’s supply problems. While we realise this is what happens when you hand machine manufacture your products, we have very strong feedback from our visitors that they love the authenticity.
+
+Due to increased demand, we have introduced more “jobs” for visitors to try in the *Industrial Zone*. Additionally, many visitors have told us they are curious to experience 20th century “burnout” and “existential despair,” so we are spinning up a new *Office Park* area to explore how we can bring these once-extinct sensations back to life.
+
+Thanks,
+The Management
+
+			</p>
+		</div>
 	</div>
+	<div id="footer">
+		<p style="color: black">Made by JM Revagorda</p>
+	</div>
+	<script>
+		const debounce = (fn) => {
+			let frame;
+			return (...params) => {
+				if (frame){
+					cancelAnimationFrame(frame);
+				}
+
+				frame = requestAnimationFrame(() => {
+					fn(...params);
+				});
+			}
+		};
+
+		const storeScroll = () => {
+			document.documentElement.dataset.scroll = window.scrollY;
+		}
+
+		document.addEventListener('scroll', debounce(storeScroll), {passive: true});
+
+		storeScroll();
+
+
+	</script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+Things to do for GE10:
+
+index
+1. Remove the background image. Replace it with a color. /
+2. Create an about area in index.html.
+3. Make the Entries area function.
+4. Add graphics to the index area.
+
+
+Challenge:
+Make a hidden website that allows you to create your own entries at ease.
