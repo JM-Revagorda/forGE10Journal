@@ -105,6 +105,7 @@
 					background-color: white;
 					max-width: 50%;
 					border: 1px solid black;
+					filter: drop-shadow(2px);
 					z-index: 1;
 				}
 				#menu2:hover .dropdown-content{
@@ -191,6 +192,9 @@
 				border: 2px solid blue;
 				padding: 20px 0;
 			}
+			.about h1, .about h2{
+				text-align: center;
+			}
 				.aboutheader{
 					/* font-size: 30px; */
 					grid-column: 1;
@@ -199,7 +203,7 @@
 					position: sticky;
 					top: 0;
 					left: 0;
-					padding-top: 30%;
+					padding-top: 40%;
 					align-self: start;
 					border: 1px solid black;
 					z-index: 3;
@@ -270,8 +274,8 @@
 	<br/>
 	<div class="content">
 		<h1 style="text-align: center; font-size: 100px;">New Entries!</h1>
-		<div class="arrow todleft">&lt;</div>
-		<div class="arrow todright">&gt;</div>
+		<!-- <div class="arrow todleft">&lt;</div>
+		<div class="arrow todright">&gt;</div> -->
 		<div class="container1">
 			<div class="entry">
 				<table>
@@ -302,72 +306,30 @@
 					</tr>
 				</table>
 			</div>
-			<div style="text-align: center; grid-row: 3; margin: 5% 47%;">
+			<!-- <div style="text-align: center; grid-row: 3; margin: 5% 47%;">
 				<span class="buttons"></span>
 				<span class="buttons"></span>
 				<span class="buttons"></span>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<div class="about">
 		<h1 class="aboutheader">About this site</h1>
 		<div id="aboutarea1">
+			<center>
+				<img src="images/Homepage/profileimage1.jpg" width="300px">
+			</center>
+			<h1>The creator</h1>
 			<p>
-				From: Margie Fish <mfish@fish.partners>
-Good morning!<br/>
-Just a quick update for you today. First off, I’ve placed your resume with two
-new agencies. They specialize in industries a little different from yours, but you 
-never know where a match might be made! I’ve also reached out to a few more 
-of my colleagues across the country, letting them know to get in touch if they 
-hear of anything. Finally, I followed up with Electromotiv again, but they keep 
-stalling. At this point I think it’s safe to say an offer won’t be coming.
-You’ve been with us for a while now and I appreciate your trust, so I want to be 
-honest: The likelihood of us finding you something that genuinely makes use of 
-your skills in the foreseeable future is rather low. This isn’t because of any lack 
-of qualifications on your part... It is simply a reflection of the realities of the time. 
-We’ll keep trying, of course! I just wanted to ensure you kept some realistic 
-expectations in mind going forward.<br/>
-<br/>
-I know you’ve said you were hoping to stay in the country, but it may be time to 
-reconsider that stance. Many of the people we represent have done stints overseas and report that it is an eye-opening, and in some cases, career-enhancing 
-move. I don’t have a lot of contacts in that particular arena, but I can point you 
-in the direction of someone I know who has some experience working with 
-Chinese electronics firms. Let me know if that sounds interesting to you and I’ll 
-get you two introduced.
-M.<br/>
------<br/>
-Margie Fish, President<br/>
-Fish Partners Recruiting<br/>
-“The journey of a thousand miles begins with a single step…”<br/>
-<br/>
-<br/>
-<br/>
-Greetings, Operator!
-
-When we started the 20th Century Experience, we believed we were onto something, but even we couldn’t have predicted the overwhelming response from our visitors. It turns out a taste of life in the 20th century is not enough for many of our visitors, and after returning regularly, some are planning to live their entire lives here!
-
-Naturally, this includes the old idea of what was called “full-time employment.” In a happy coincidence, the introduction of “workers” to our park brings us one step closer to being the most authentic reproduction of the 20 century! Of course, now that we have a large number of people willing to assemble our food using their own two hands, we no longer require your services to design automated food assembly machines.
-
-Best of luck in your future endeavours!
-
-Thanks,
-The Management
-<br/>
-<br/>
-<br/>
-Greetings, Operator!
-
-It’s exciting times for the 20th Century Experience! A few announcements to make regarding park operations:
-
-We are increasing *Mall* and *Skate Park* hours to 24 hours a day. All operators role-playing as Retail Associates at the Mall or as Cool Kids in the Skate Park will be assigned to one of three shifts.
-
-*Keytars* are now back in stock after last month’s supply problems. While we realise this is what happens when you hand machine manufacture your products, we have very strong feedback from our visitors that they love the authenticity.
-
-Due to increased demand, we have introduced more “jobs” for visitors to try in the *Industrial Zone*. Additionally, many visitors have told us they are curious to experience 20th century “burnout” and “existential despair,” so we are spinning up a new *Office Park* area to explore how we can bring these once-extinct sensations back to life.
-
-Thanks,
-The Management
-
+				A programmer coming from Dumaguete who sets his eyes on making new things that he has not done before.
+				He believes that art and coding can truly come in together. 
+			</p>
+			<br/>
+			<h2>Why this website exists?</h2>
+			<p>
+				This is a website created for a school project that aims to get different entries under the 
+				5Cs of Silliman: Court, Classroom, Church, Community, and Culture. Not only this website gathers merely 
+				pictures, but also the experiences the author had made during his time in them.
 			</p>
 		</div>
 	</div>
@@ -396,6 +358,8 @@ The Management
 
 		storeScroll();
 
+		var contentbg = document.getElementsByClassName("content")[0];
+		contentbg.style.backgroundImage = "url(images/Homepage/entrybg2.png)";
 
 	</script>
 </body>
