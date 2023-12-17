@@ -37,7 +37,7 @@
     <!-- Loaded area of journals -->
     <div class="main_grid_element">
         <div class="journal_temp" id="entry1">
-            <div class="entryimage"></div>
+            <div class="entryimage"><img src="images/Church/IMG20231102164823.jpg" style="object-fit: cover; object-position: 90% 0%; width: 250px; height: 250px;"></div>
             <div class="entrytext">
                 <p>All Saint's Day Family Reunion <span class="date">11/1/2023</span></p>
                 <p>
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="journal_temp" id="entry2" onclick="fentry2()">
-            <div class="entryimage"></div>
+            <div class="entryimage"><img src="images/Church/IMG20231023214458.jpg" style="object-fit: cover; object-position: 90% 0%; width: 250px; height: 250px;"></div>
             <div class="entrytext">
                 <p>Family Rosary <span class="date">8/23/2023</span></p>
                 <p>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="journal_temp" id="entry3" onclick="fentry3()">
-            <div class="entryimage"></div>
+            <div class="entryimage"><img src="images/Church/IMG20231022103456.jpg" style="object-fit: cover; object-position: 90% 0%; width: 250px; height: 250px;"></div>
             <div class="entrytext">
                 <p>Wake of my Mom's friend from Dipolog <span class="date">10/22/2023</span></p>
                 <p>
@@ -73,13 +73,25 @@
             </div>
         </div>
         <div class="journal_temp" id="entry4" onclick="fentry4()">
-            <div class="entryimage"></div>
+            <div class="entryimage"><img src="images/Church/IMG20231121172102.jpg" style="object-fit: cover; object-position: 90% 25%; width: 250px; height: 250px;"></div>
             <div class="entrytext">
                 <p>UCLEM Convocation <span class="date">11/21/2023</span></p>
                 <p>
                     This event happened in the afternoon at 5:00pm. Before the main event started, there was a hanging of the 
                     banners that we have made in the morning during our CHS times. However, the event was moved to the inside 
-                    of the SU Church instead of the Ampitheater as hard rains had enveloped the
+                    of the SU Church instead of the Ampitheater as hard rains had enveloped the...
+                </p>
+                <span style="font-style: italic; color: gray;">Read More</span>
+            </div>
+        </div>
+        <div class="journal_temp" id="entry5" onclick="fentry5()" style="grid-column: 1 / span 2; width: 60%; margin: auto;">
+            <div class="entryimage"><img src="images/Church/IMG20230902182209.jpg" style="object-fit: cover; object-position: 90% 25%; width: 250px; height: 250px;"></div>
+            <div class="entrytext">
+                <p>Ordinary Mass<span class="date">9/2/2023</span></p>
+                <p>
+                    This mass was held by the Mary Immaculate Parish Priests in the evening of 6:00 PM. Me and my family don’t
+                    normally go there for mass, but since we were busy the entire day and the only time we are free is late in
+                    the evening, we attended their mass...
                 </p>
                 <span style="font-style: italic; color: gray;">Read More</span>
             </div>
@@ -90,8 +102,8 @@
     <div class="modal">
         <div class="hid_journal_temp" id="fullentry1">
             <span class="close">&times;</span>
-            <div class="entryimage"></div>
-            <div class="entrytext" style="padding: 5px; width: 85ch;">
+            <div class="entryimage"><img src="images/Church/IMG20231102164823.jpg" style="position: sticky; top: 0; left: 0; width: 350px; height: 270px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 80ch;">
                 <p>All Saint's Day Family Reunion<span class="date">11/1/2023</span></p>
                 <p>
                     During the small vacation week leading up to the All Soul's and All Saints Day, our family visited 
@@ -123,8 +135,8 @@
     <div class="modal">
         <div class="hid_journal_temp" id="fullentry2">
             <span class="close">&times;</span>
-            <div class="entryimage"></div>
-            <div class="entrytext" style="padding: 5px; width: 85ch;">
+            <div class="entryimage"><img src="images/Church/IMG20231023214458.jpg" style="position: sticky; top: 0; left: 0; width: 350px; height: 270px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 75ch;">
                 <p>Family Rosary<span class="date">10/23/2023</span></p>
                 <p>
                     I had organized my family’s evening rosary session. Although it was planned by our family to do this 
@@ -149,8 +161,8 @@
     <div class="modal">
         <div class="hid_journal_temp" id="fullentry3">
             <span class="close">&times;</span>
-            <div class="entryimage"></div>
-            <div class="entrytext" style="padding: 5px; width: 85ch;">
+            <div class="entryimage"><img src="images/Church/IMG20231022103456.jpg" style="position: sticky; top: 0; left: 0; width: 350px; height: 270px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 80ch;">
                 <p>Wake of my Mom's friend from Dipolog <span class="date">10/22/2023</span></p>
                 <p>
                     We went immediately to Dipolog after catching wind that her friend is having a wake. Catching the
@@ -192,8 +204,8 @@
     <div class="modal">
         <div class="hid_journal_temp" id="fullentry4">
             <span class="close">&times;</span>
-            <div class="entryimage"></div>
-            <div class="entrytext" style="padding: 5px; width: 85ch;">
+            <div class="entryimage"><img src="images/Church/IMG20231121172102.jpg" style="position: sticky; top: 0; left: 0; width: 250px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 80ch;">
                 <p>UCLEM Convocation <span class="date">11/21/2023</span></p>
                 <p>
                     This event happened in the afternoon at 5:00pm. Before the main event started, there was a hanging of the 
@@ -217,6 +229,36 @@
                     <br/><br/>
                     Because of this activity, I am inspired to help people to go back to the path of goodness, and to have
                     hope for a better future.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="hid_journal_temp" id="fullentry4">
+            <span class="close">&times;</span>
+            <div class="entryimage"><img src="images/Church/IMG20230902182209.jpg" style="position: sticky; top: 0; left: 0; width: 350px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 80ch;">
+                <p>Ordinary Mass <span class="date">9/2/2023</span></p>
+                <p>
+                    This mass was held by the Mary Immaculate Parish Priests in the evening of 6:00 PM. Me and my family don’t
+                    normally go there for mass, but since we were busy the entire day and the only time we are free is late in
+                    the evening, we attended their mass.
+                    <br/><br>
+                    Just like any other mass or event that I first attended, I dont think or expect too much on how it should
+                    play out. Their mass is just like any other masses that we have attended, the difference being the location. 
+                    The mass was about putting our complete faith in Christ and in the Lord himself. Although there are times
+                    when we seek the help of someone, we shouldnt depend so much on the person, as there are cases where people
+                    can betray someone that they know or love. However, Jesus Christ isnt like that, as he never betrays anyone,
+                    most especially those who we view as wicked as God always gives them the chance to change themselves.
+                    <br><br>
+                    I will try to apply the message in my everyday life by remembering to pray to God, telling Him my fears,
+                    my happiness, and my sins. I also ask from Him guidance that He may be able to guide me through the challenges 
+                    that I will be facing in the next day. Also, I will try to help others in their troubles and to become humble 
+                    as well, as a way of repaying back what God has done for me and my family in my works and to acknowledge that
+                    God is definitely God.
+                    <br><br>
+                    This event helped me understand me more on God's everlasting grace. When one places his/her faith in Him, 
+                    miracles can happen. 
                 </p>
             </div>
         </div>
