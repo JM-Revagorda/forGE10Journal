@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Journal</title>
+    <!-- /<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
+    <link rel="stylesheet" href="forjournals.css">
+</head>
+
+<body>
+    <div class="header" style="background-color: orange;">
+        <h1 style="width: 50%;">Journal Entry</h1>
+        <div class="menu">
+            <a href="#"><div id="about">About</div></a>
+            <div id="menujournals">
+                Journals
+                <div class="dropdown-content" style="padding: 0;">
+                    <a href="journalCourt.html">Court</a>
+                    <a href="journalChurch.html">Church</a>
+                    <a href="#" style="background-color: gray;">Classroom</a>
+                    <a href="journalCulture.html">Culture</a>
+                    <a href="journalCommunity.html">Community</a>
+                </div>
+            </div>
+            <a href="index.html"><div id="menuhome">Home</div></a>
+        </div>
+    </div>
+<div id="container">
+    <div class="side_grid_element">
+        <h1>Classroom</h1>
+        <p>
+            Teaching Moments...
+        </p>
+    </div>
+    <div class="main_grid_element">
+        <div class="journal_temp" id="entry1">
+            <div class="entryimage"><img src="images/Court/vanguardcardfight.jpg" style="object-fit: cover; object-position: 90% 0%; width: 250px; height: 250px;"></div>
+            <div class="entrytext">
+                <p>Freshman Committee Orientation <span class="date">8/16/2023</span></p>
+                <p>
+                    After our GE10 Subject Orientation had ended, several seniors went up the stage. They were the representatives of the 
+                    committees that made up our college's Confederate Council of Committees. I watched the introduction of each member and
+                    committee as they produced some of the most interesting advertisements on what their respective committees do. Some
+                </p>
+                <span style="font-style: italic; color: gray;">Read More</span>
+            </div>
+        </div>
+        <div class="journal_temp" id="entry2" onclick="fentry2()">
+            <div class="entryimage"><img src="images/Court/received_1466494114084659.jpeg" style="object-fit: cover; object-position: 90% 0%; width: 250px; height: 250px;"></div>
+            <div class="entrytext">
+                <p>PEP Orientation <span class="date">8/12/2023</span></p>
+                <p>
+                    This event was an introduction to the PEP classes that the PEP teachers will be holding after the Founder's Week.
+                    I was one of those who are sitting along the circle with those who have scheduled this activity...
+                </p>
+                <span style="font-style: italic; color: gray;">Read More</span>
+            </div>
+        </div>
+        <div class="journal_temp" id="entry3" onclick="fentry3()">
+            <div class="entryimage"><img src="images/Court/IMG20231014085329.jpg" style="object-fit: cover; object-position: 90% 0%; width: 250px; height: 250px;"></div>
+            <div class="entrytext">
+                <p>Balik Talent Lecture: “Syntaxes, Strategies, and Stories” <span class="date">8/22/2023</span></p>
+                <p>
+                    his event was hosted by the College of Computer Studies featuring the speaker, , who owns a company that creates content
+                    for their client's FB pages and proves that programming, art, and stories can come together. I participated the lecture
+                    as a student, as I dont have any role in this lecture. However, I did answer some questions...
+                </p>
+                <span style="font-style: italic; color: gray;">Read More</span>
+            </div>
+        </div>
+        <div class="journal_temp" id="entry4" onclick="fentry4()">
+            <div class="entryimage"><img src="images/Court/IMG20231021153248.jpg" style="object-fit: cover; object-position: 50% 0%; width: 250px; height: 250px;"></div>
+            <div class="entrytext">
+                <p>NSTP Orientation <span class="date">8/19/2023</span></p>
+                <p>
+                    The orientation was held in the Cimafranca Ballfield at 6 am in the morning. We were still sleepy when we went to the 
+                    grand stand, even hungry as most of us hadnt eaten our breakfast yet. Even with this, it was still necessary for us 
+                    to be there. Before the morning rays of sun reached the grand stand, we had a Zumba performance...
+                </p>
+                <span style="font-style: italic; color: gray;">Read More</span>
+            </div>
+        </div>
+        <div class="journal_temp" id="entry5" onclick="fentry5()">
+            <div class="entryimage"><img src="images/Court/IMG20230819084925.jpg" style="object-fit: cover; object-position: 90% 0%; width: 250px; height: 250px;"></div>
+            <div class="entrytext">
+                <p><span class="date"></span></p>
+                <p>
+                    
+                </p>
+                <span style="font-style: italic; color: gray;">Read More</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="hid_journal_temp" id="fullentry1">
+            <span class="close">&times;</span>
+            <div class="entryimage"><img src="images/Court/vanguardcardfight.jpg" style="position: sticky;
+                                                                                        top: 0;
+                                                                                        left: 0;
+                                                                                        width: 350px; height: 270px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 80ch;">
+                <p>Freshman Committee Orientation <span class="date">8/16/2023</span></p>
+                <p>
+                    After our GE10 Subject Orientation had ended, several seniors went up the stage. They were the representatives of the 
+                    committees that made up our college's Confederate Council of Committees. I watched the introduction of each member and
+                    committee as they produced some of the most interesting advertisements on what their respective committees do. Some of
+                    them have long descriptions on their powerpoints on what their committee can do, while others have their own unique 
+                    style of portraying the responsibilities and roles of the committee in an unprofessional, though rather funny and 
+                    relational, way. While others just say it in front of us, also telling the truth of what they do.
+                    <br><br>
+                    The entire program ran like a prepared show in front of us. As they told us the responsibilities of each committee,
+                    I noticed that each committee has different roles and inclinations. In the Aesthetics Committee, they help in 
+                    producing some of the most elaborate designs for every event CCS has to offer. In the Transportation Committee, 
+                    their aim is to check on what is needed by the other committees and to order and transport those goods or equipment to
+                    them or to the location where the event is held. While in the Administratice Committee, their responsibilities is to
+                    deliver messages or documents made by the Dean and her secretaries to other departments. Yet, even with all of this,
+                    they still need each other in order to be effective in what they need to do. Even if they have nothing to do, they try 
+                    to help the other committees in what they are doing, such as Administrative Committee helping the Aesthetics Committee 
+                    in making the props for an event, etc.
+                    <br><br>
+                    Although this doesnt seem much, this helped me appreciate more how they still need each other even if they are in 
+                    different spectrums.
+                    <br><br>
+                    This activity helped me understand that college life is not only about studies, but also making the most out of life and
+                    to explore more on what you could do.
+                </p> 
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="hid_journal_temp">
+            <span class="close">&times;</span>
+            <div class="entryimage"><img src="images/Court/received_1466494114084659.jpeg" style="position: sticky;
+                                                                                                top: 0;
+                                                                                                left: 0;
+                                                                                                width: 400px; height: 290px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 70ch;">
+                <p>PEP Orientation <span class="date">8/22/2023</span></p>
+                <p>
+                    This event was an introduction to the PEP classes that the PEP teachers will be holding after the Founder's Week.
+                    I was one of those who are sitting along the circle with those who have scheduled this activity.
+                    <br><br>
+                    This activity was eye-opening, as I have met for the first time, my college mates in the department. It was a fun
+                    experience. As I get to know each one of them, I have learnt the characteristics of each person I have met in the
+                    activity. I always believed that college was an introduction to a boring and unfriendly life, yet here I am, 
+                    dancing around with the people who I will soon call "friends" and "colleagues".
+                    <br><br>
+                    This activity taught me that there is so much to learn about in life. It is not only to merely become successful in 
+                    life, but also rather to enjoy what life has to offer, even if I lose.
+                    <br><br>
+                    Because of this activity, this had opened my eyes to the college life. 
+                </p> 
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="hid_journal_temp" id="fullentry2">
+            <span class="close">&times;</span>
+            <div class="entryimage"><img src="images/Court/IMG20231014085329.jpg" style="position: sticky;
+                                                                                        top: 0;
+                                                                                        left: 0;
+                                                                                        width: 400px; height: 290px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 70ch;">
+                <p>Balik Talent Lecture: “Syntaxes, Strategies, and Stories” <span class="date">8/22/2023</span></p>
+                <p>
+                    This event was hosted by the College of Computer Studies featuring the speaker, , who owns a company that creates content
+                    for their client's FB pages and proves that programming, art, and stories can come together. I participated the lecture
+                    as a student, as I dont have any role in this lecture. However, I did answer some questions that he had during the lecture.
+                    <br><br>
+                    His lecture taught me many things. His lecture taught me that the right mindset can make anything possible. He also 
+                    taught us that the right strategy such as a change in habits in order to accomplish more in the work that we do.
+                    And lastly, he taught us that we should enjoy the work, as it can help us gain a good mindset and a good strategy to 
+                    overcome the difficulties that programming can happen.
+                    <br><br>
+                    I will use this teaching in my programming by taking breaks from time to time in order to start the work fresh. Then,
+                    I will utilize time-management techniques in order to accomplish my goal faster. But ultimately, I have to remember
+                    the joy of having a program or website to work, and the reason as to why I am here in the first place.
+                    <br><br>
+                    This lecture had helped me boost my motivation and my inspiration that art and coding can come together
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="hid_journal_temp" id="fullentry2">
+            <span class="close">&times;</span>
+            <div class="entryimage"><img src="images/Court/IMG20231021153248.jpg" style="position: sticky;
+                                                                                        top: 0;
+                                                                                        left: 0;
+                                                                                        height: 190px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 70ch;">
+                <p>NSTP Orientation <span class="date">8/19/2023</span></p>
+                <p>
+                    The orientation was held in the Cimafranca Ballfield at 6 am in the morning by the NSTP-ROTC Organisers. We were still sleepy when we went to the 
+                    grand stand, even hungry as most of us hadnt eaten our breakfast yet. Even with this, it was still necessary for us 
+                    to be there. Before the morning rays of sun reached the grand stand, we had a Zumba performance given by the SU 
+                    Athletics Department. Then the Morning Devotion came, until the Orientation for ROTC came.
+                    <br><br>
+                    What surprised me in the orientation that unlike the calm and collective marketing of the other NSTP groups, the ROTC
+                    were seemingly the most obnoxious, in a sense that it tries to make itself higher and mightier than the other NSTP
+                    groups. It threw me off, and even supported the sole reason why I dislike the military. Putting it aside, I did learn
+                    something in the orientation. To succeed in something, one must not only have the money, love, or teamwork to do it,
+                    but rather the right attitude in order to pull off a feat. Like how the LTS members care for the disabled, the CWTS
+                    deal in community projects, and the ROTC deal with on-ground tactical strategies, having the right mindset, attitude,
+                    and discipline can make the world go round as intended.
+                    <br><br>
+                    This orientation helped me learn that sometimes, discipline and compassion towards one's work can help one persevere
+                    through every problem that they may face. Things like continuing to find the solutions of a math problem, asking
+                    help from others who faced the same situation, and being brave enough to face the problem I have now are things like 
+                    that. And because of this orientation, I have learnt to persevere through the right attitude.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="hid_journal_temp" id="fullentry2">
+            <span class="close">&times;</span>
+            <div class="entryimage"><img src="images/Court/IMG20230819084925.jpg" style="position: sticky;
+                                                                                        top: 0;
+                                                                                        left: 0;
+                                                                                        width: 400px; height: 290px;"></div>
+            <div class="entrytext" style="padding: 5px; width: 70ch;">
+                <p> <span class="date">7/19/2023</span></p>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="jsmodaljournals.js"></script>
+
+</body>
+
+</html>
