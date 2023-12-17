@@ -9,7 +9,7 @@
         var modal_btn_multi = document.getElementsByClassName("journal_temp");
 
         // Get the <span> element that closes the modal
-        // var span_close_multi = document.getElementsByClassName("close_multi");
+        var span_close_multi = document.getElementsByClassName("close");
 
         // When the user clicks the button, open the modal
         function setDataIndex() {
@@ -18,7 +18,7 @@
             {
                 modal_btn_multi[i].setAttribute('data-index', i);
                 modalparent[i].setAttribute('data-index', i);
-                // span_close_multi[i].setAttribute('data-index', i);
+                span_close_multi[i].setAttribute('data-index', i);
             }
         }
 
@@ -32,10 +32,10 @@
             };
 
             // When the user clicks on <span> (x), close the modal
-            // span_close_multi[i].onclick = function() {
-            //     var ElementIndex = this.getAttribute('data-index');
-            //     modalparent[ElementIndex].style.display = "none";
-            // };
+            span_close_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "none";
+            };
 
         }
 
